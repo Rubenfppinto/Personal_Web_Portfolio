@@ -5,39 +5,12 @@
     /* border: 1px red solid; */
 }
 
-/* .main-image {
-    background-image: url('../images/image06.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+header {
     width: 100%;
-}
-
-.jumbotron-align-middle {
     height: 100vh;
+    background: url('../images/image06.jpg') center no-repeat;
+    background-size: cover;
 }
-
-.items2 {
-    vertical-align: middle;
-}
-
-.jumbo-transparent {
-    background-color: transparent;
-}
-
-.social-media-icons {
-    color: white;
-}
-
-#page-no-padding {
-    padding: 0px;
-}
-
-.bg-color {
-    background-color: lightgray;
-} */
-
-
 
 nav {
     display: flex;
@@ -45,8 +18,14 @@ nav {
     align-items: center;
     min-height: 8vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #5D4954;
+    background-color: transparent;
 }
+
+/* .container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+} */
 
 .logo {
     color: rgb(226, 226, 226);
@@ -86,22 +65,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
 @media screen and (max-width:1024px) {
     .nav-links {
         width: 60%;
@@ -135,6 +98,10 @@ nav {
     }
 }
 
+.nav-active {
+    transform: translateX(0%);
+}
+
 /* smooth slide in and out of the bar on mobile */
 @keyframes navLinkFade {
     from {
@@ -147,3 +114,14 @@ nav {
     }
 }
 
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

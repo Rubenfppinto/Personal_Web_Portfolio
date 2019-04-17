@@ -125,3 +125,67 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+/* Social Media Links */
+
+.middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.social_media_btn {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+
+.social_media_btn i{
+    line-height: 60px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.social_media_btn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.social_media_btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.social_media_btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        top: -110%;
+        left: 90%;
+    }50%{
+        top: 10%;
+        left: -30%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}

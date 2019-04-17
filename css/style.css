@@ -10,6 +10,11 @@ header {
     height: 100vh;
     background: url('../images/image01.jpg') center no-repeat;
     background-size: cover;
+
+    /* Paralax effect */
+    position: relative;
+    /* opacity: 0.70; */
+    background-attachment: fixed;
 }
 
 nav {

@@ -16,9 +16,9 @@ header {
     background-size: cover;
 
     /* Paralax effect */
-    position: relative;
-    /* opacity: 0.70; */
-    background-attachment: fixed;
+    /* position: relative;
+    opacity: 0.70;
+    background-attachment: fixed; */
 }
 
 nav {
@@ -73,6 +73,9 @@ nav {
 }
 
 @media screen and (max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
     .nav-links {
         width: 60%;
     }

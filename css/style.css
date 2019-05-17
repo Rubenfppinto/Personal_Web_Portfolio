@@ -12,13 +12,12 @@ html {
 header {
     width: 100%;
     height: 100vh;
-    background: url('../images/image01.jpg') center no-repeat;
+    background:  url('../images/image01.jpg') center no-repeat;
     background-size: cover;
 
     /* Paralax effect */
-    /* position: relative;
-    opacity: 0.70;
-    background-attachment: fixed; */
+    position: relative;
+    background-attachment: fixed; 
 }
 
 /* Navbar */
@@ -105,10 +104,14 @@ nav ul li a {
     }
 }
 
-/* In page links */
-.body-section {
-    padding-top: 70px;
-    height: 100vh;
+/* Welcome text */
+
+.introduction-text {
+    position: absolute;
+    
+    
+    width: 100%;
+    text-align: center;
 }
 
 /* Social Media Links */
@@ -177,17 +180,17 @@ nav ul li a {
 
 /* Main Body */
 
-.body-container {
-    padding: 20px;
-    margin: 0% 5%;
-    border: red 1px solid;
-}
-
-.projects_container {
+h2 {
+    padding-bottom: 20px;
     padding-top: 20px;
 }
+.projects-container {
+    padding-top: 20px;
+    padding-top: 70px;
+    height: 100vh;
+}
 
-.cards_container {
+.cards-container {
     display: flex;
     flex-direction: row;
     border: blue 1px solid;
@@ -196,9 +199,28 @@ nav ul li a {
     padding-bottom: 20px;
 }
 
-.project_cards {
+.project-cards {
     width: 30%;
     border: red 1px solid;
     border-radius: 5px;
     height: 200px;
+}
+
+.body-content {
+    padding: 0% 20%;
+    margin-top: 5%;
+}
+
+.aboutme-container {
+    padding-top: 70px;
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../images/image02.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.projects-container {
+    padding-top: 70px;
+    height: 100vh;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../images/image03.jpg') center no-repeat;
+    background-size: cover;
 }

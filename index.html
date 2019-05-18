@@ -36,7 +36,7 @@
                     <a class="social_media_btn" href="https://github.com/Rubenfppinto" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                </div>
+                    </div>
                 </div>
 
                 <nav>
@@ -70,31 +70,44 @@
         </div>
 
         <!-- Projects seciton -->
-        <div id="projects" class="projects-container">
-            <h2 id="projects">Projects</h2>
-            <div class="cards-container" >
-                <div class="project-cards">
-                    <p>Project 1</p>
-                    <div>
-                        Image
-                    </div>
-                    <div>
-                        description
-                    </div>
-                    <div>
-                        <div>
-                            <button>GitHub</button>
-                        </div>
-                        <div>
-                            <button>Demo</button>
+
+        <div id="projects" class="row projects-container">
+            <div>
+                <h2>Projects</h2>
+            </div>
+            <div class="cards-container">
+                <div class="column">
+                    <div class="content">
+                        <img src="images/image01.jpg">
+                        <h3>Gotta Go Fast</h3>
+                        <p>Links coming soon...</p>
+                        <div class="btn">
+                            <button type="button">GitHub</button>
+                            <button type="button">Demo</button>
                         </div>
                     </div>
                 </div>
-                <div class="project-cards">
-                    <p>Project 2</p>
+                <div class="column">
+                    <div class="content">
+                        <img src="images/image01.jpg">
+                        <h3>Movies library</h3>
+                        <p>Links coming soon...</p>
+                        <div class="btn">
+                            <button type="button">GitHub</button>
+                            <button type="button">Demo</button>
+                        </div>
                 </div>
-                <div class="project-cards">
-                    <p>Project 3</p>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="images/image03.jpg">
+                        <h3>Coming soon</h3>
+                        <p>Under construction..</p>
+                        <div class="btn">
+                            <button type="button">GitHub</button>
+                            <button type="button">Demo</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,7 +117,6 @@
             <div class="body-content container">
                 <h2 >Contact me</h2>
                 <form name="contact" action="POST" data-netlify="true">
-
                     <input type="text" name="name" class="form-control" placeholder="Your name..." required><br>
 
                     <input type="email" name="email" class="form-control" placeholder="Your email..." required><br>
@@ -112,13 +124,23 @@
                     <textarea name="message" class="form-control" placeholder="Your message..." rows="10" cols="60" required></textarea><br>
 
                     <div data-netlify-recaptcha="true"></div>
-
                     <input type="submit" class="form-control submit" value="Send Message">
                 </form>
         </div>
         </div>
         <footer>
-            @Ruben Pinto
+            <div>
+                ©Ruben Pinto 2019
+            </div>
+            
+            <div>
+                    <a href="https://www.linkedin.com/in/rubenpinto/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Rubenfppinto" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    </div>
         </footer>
         <script src="js/script.js"></script> 
     </body>

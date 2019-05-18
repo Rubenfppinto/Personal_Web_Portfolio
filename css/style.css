@@ -25,7 +25,18 @@ footer {
     height: 150px;
     padding: 50px;
     text-align: center;
-    background-color: lightslategray;
+    background-color: #1F2123;
+    color: #F1F1F1;
+}
+
+footer a {
+    color: White;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+footer a:hover {
+    color: #2D4FEE;
 }
 
 /* Navbar */
@@ -36,11 +47,6 @@ footer {
     color: #fff;
     font-weight: bold;
     font-size: 24px;
-    text-decoration: none;
-}
-
-.logo a:visited {
-    text-decoration: none;
 }
 
 .logo span {
@@ -90,7 +96,7 @@ nav ul li a {
     display: none;
 }
 
-@media(max-width: 580px){
+@media(max-width: 930px){
     .logo {
         position: fixed;
         top: 0;
@@ -211,7 +217,6 @@ h2 {
 .cards-container {
     display: flex;
     flex-direction: row;
-    border: blue 1px solid;
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -226,11 +231,11 @@ h2 {
 
 .body-content {
     padding: 0% 20%;
-    margin-top: 5%;
 }
 
 .aboutme-container {
-    padding-top: 70px;
+    display: flex;
+    align-items: center;
     height: 100vh;
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../images/image02.jpg') center no-repeat;
     background-size: cover;
@@ -243,12 +248,68 @@ h2 {
     background-size: cover;
 }
 
+.cards-container{
+    display: flex;
+    justify-content: center;
+}
+
 .contactme-container {
-    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
     height: 100vh;
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.8)), url('../images/image05.jpg') center no-repeat;
     background-size: cover;
 }
+
+/* Projects gallery */
+
+/* Add padding BETWEEN each column (if you want) */
+.row {
+    width: 100%;
+}
+.row > .column {
+    border: 1px red solid;
+}
+
+/* Create equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    margin-left: 10px;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: rgba(255,255,255,.5);
+    padding: 5px;
+}
+
+.content img {
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+    width: 100%;
+}
+}
+
 
 /* Contact me form */
 
@@ -285,3 +346,29 @@ form .submit {
 form .submit:hover {
     background-color: red;
 }
+
+/* Project buttons */
+
+
+button {
+    background: none;
+    color: black;
+    width: 120px;
+    height: 30px;
+    border: 1px solid Black;
+    font-size: 18px;
+    
+    border-radius: 4px;
+    transition: .6s;
+    overflow: hidden;
+}
+
+
+
+button:hover {
+    background: #282828;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+

@@ -130,9 +130,15 @@ nav ul li a {
 
 /* Welcome text */
 
-.introduction-text p {
-   
-   color: white;
+.introduction-text-container p {
+    padding: 1% 1%;
+    background-color: rgba(255,255,255,.5);
+    color: Black;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 50px;
+    width: 100%
 }
 
 /* Social Media Links */
@@ -144,11 +150,9 @@ nav ul li a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    
+    width: 100%;
     text-align: center;
-    
 }
-
 
 .social_media_btn {
     display: inline-block;
@@ -335,7 +339,7 @@ input {
 }
 
 form .submit {
-    background-color: darkred;
+    background-color: #94524A;
     border-color: transparent;
     font-size: 20px;
     font-weight: bold;
@@ -345,7 +349,7 @@ form .submit {
 }
 
 form .submit:hover {
-    background-color: red;
+    background-color: darkred;
 }
 
 /* Project buttons */

@@ -4,7 +4,6 @@ $(document).ready(function() {
         $(".menu a").on("click", function () {
             $("nav ul").removeClass("showing");
         });
-
     });
 });
 

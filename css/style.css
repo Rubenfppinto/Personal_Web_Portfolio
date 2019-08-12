@@ -24,15 +24,16 @@ body {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #1ebba3;
+    color: #EF946C;
     padding-top: .8rem;
 }
 
 /* Landing page */
 
-.home-inner {
-    background-image: url(../images/image01.jpg);
-    background-color: black;
+.landing-section-bg{
+    background:  url('../images/image06.jpeg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 /* Home section social media link */

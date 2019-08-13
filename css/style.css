@@ -10,7 +10,7 @@ body {
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .1rem;
-    background: rgba(0,0,0,0.6)!important;
+    background: rgba(100,94,157,0.9)!important;
 }
 
 .navbar-nav li {
@@ -31,7 +31,7 @@ body {
 /* Landing page */
 
 .landing-section-bg{
-    background:  url('../images/image06.jpeg') center no-repeat;
+    background:  linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.2)), url('../images/image06.jpeg') center no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -89,4 +89,60 @@ body {
         top: -10%;
         left: -10%;
     }
+}
+
+/* About me */
+hr {
+    width: 10rem;
+}
+
+/* Projects */
+
+/* Contact me form */
+
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color:black;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background-color: #554562;
+    color: #FFEFFA;
+    border-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20PX;
+}
+
+form .submit:hover {
+    background-color: #645E9D;
+}
+
+/* footer */
+
+footer a {
+    color: White;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+footer a:hover {
+    color: #2D4FEE;
 }

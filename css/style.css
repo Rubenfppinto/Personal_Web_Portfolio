@@ -1,158 +1,55 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    /* border: 1px red solid; */
-}
-
 html {
     scroll-behavior: smooth;
 }
 
-header {
-    width: 100%;
-    height: 100vh;
-    background:  url('../images/image01.jpg') center no-repeat;
+body {
+    overflow-x: hidden;
+    color: #505962;
+}
+
+section {
+    height: 100vh
+}
+
+/* Navigation */
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    /* background: rgba(100,94,157,0.9)!important; */
+    background: rgba(85,69,98,0.9)!important;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #EF946C;
+    padding-top: .8rem;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/* Landing page */
+
+.landing-section-bg{
+    background:  linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('../images/image06.jpeg') center no-repeat;
     background-size: cover;
-
-    /* Paralax effect */
-    position: relative;
-    background-attachment: fixed; 
+    height: 100vh;
 }
 
-footer {
-    width: 100%;
-    height: 150px;
-    padding: 50px;
-    text-align: center;
-    background-color: #1F2123;
-    color: #F1F1F1;
-}
-
-footer a {
-    color: White;
-    padding: 5px;
-    margin-top: 15px;
-}
-
-footer a:hover {
-    color: #2D4FEE;
-}
-
-/* Navbar */
-.logo {
-    position: fixed;
-    float: left;
-    margin: 16px 36px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.logo span {
-    color: darkred;
-    
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    background: rgba(0,0,0,0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: center;
-    margin: 0;
-    transition: 1s;
-}
-
-nav.black ul {
-    background: #000;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-
-.menu-icon {
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
-}
-
-@media(max-width: 930px){
-    .logo {
-        position: fixed;
-        top: 0;
-        margin-top: 16px;
-    }
-
-    nav ul {
-        max-height: 0px;
-        background: #000;
-    }
-
-    nav.black ul {
-        background: #000;
-    }
-
-    .showing {
-        max-height: 20em;
-    }
-
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px 0;
-        text-align: center;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-}
-
-/* Welcome text */
-
-.introduction-text-container p {
-    padding: 1% 1%;
-    background-color: rgba(255,255,255,.5);
-    color: Black;
-    text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 50px;
-}
-
-/* Social Media Links */
-
-.middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-}
-
+/* Home section social media link */
 .social_media_btn {
     display: inline-block;
     width: 60px;
@@ -207,119 +104,21 @@ nav ul li a {
     }
 }
 
-/* Main Body */
-
-h2 {
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-.projects-container {
-    padding-top: 20px;
-    padding-top: 70px;
-    height: 100vh;
+/* About me */
+hr {
+    width: 7rem;
+    border-top: 2px solid indigo;
 }
 
-.cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+/* Projects */
 
-.project-cards {
-    width: 30%;
-    border: red 1px solid;
-    border-radius: 5px;
-    height: 200px;
-}
 
-.body-content {
-    padding: 0% 20%;
-}
+/* Contact me form */
 
-.aboutme-container {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../images/image02.jpg') center no-repeat;
-    background-size: cover;
-}
-
-.projects-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70px;
-    height: 100vh;
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../images/image03.jpg') center no-repeat;
-    background-size: cover;
-}
-
-.cards-container{
-    display: flex;
-    justify-content: center;
-    
-}
-
-.contactme-container {
-    display: flex;
-    align-items: center;
-    padding-top: 40px;
-    height: 100vh;
+.contactme {
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.8)), url('../images/image05.jpg') center no-repeat;
     background-size: cover;
 }
-
-/* Projects gallery */
-
-/* Add padding BETWEEN each column (if you want) */
-.row {
-    width: 100%;
-}
-.row > .column {
-    border: 1px red solid;
-}
-
-/* Create equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 20%;
-    margin-left: 10px;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: rgba(255,255,255,.5);
-    padding: 5px;
-}
-
-.content img {
-    width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .column {
-        width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-/* Contact me form */
 
 form {
     margin-top: 50px;
@@ -328,7 +127,7 @@ form {
 
 .form-control {
     width: 600px;
-    background: transparent;
+    background: transparent !important;
     border: none;
     outline: none;
     border-bottom: 1px solid gray;
@@ -341,8 +140,14 @@ input {
     height: 45px;
 }
 
+input .active {
+    outline: none;
+    border: none;
+}
+
 form .submit {
-    background-color: #94524A;
+    background-color: #554562;
+    color: #FFEFFA;
     border-color: transparent;
     font-size: 20px;
     font-weight: bold;
@@ -352,31 +157,17 @@ form .submit {
 }
 
 form .submit:hover {
-    background-color: darkred;
+    background-color: #645E9D;
 }
 
-/* Project buttons */
+/* footer */
 
-
-button {
-    background: none;
-    color: black;
-    width: 120px;
-    height: 30px;
-    border: 1px solid Black;
-    font-size: 18px;
-    
-    border-radius: 4px;
-    transition: .6s;
-    overflow: hidden;
+footer a {
+    color: White;
+    padding: 5px;
+    margin-top: 15px;
 }
 
-
-
-button:hover {
-    background: #282828;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
+footer a:hover {
+    color: #2D4FEE;
 }
-

@@ -7,6 +7,10 @@ body {
     color: #505962;
 }
 
+section {
+    height: 100vh
+}
+
 /* Navigation */
 
 .navbar {
@@ -33,10 +37,14 @@ body {
     padding-top: .8rem;
 }
 
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
 /* Landing page */
 
 .landing-section-bg{
-    background:  linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.2)), url('../images/image06.jpeg') center no-repeat;
+    background:  linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)), url('../images/image06.jpeg') center no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -98,12 +106,19 @@ body {
 
 /* About me */
 hr {
-    width: 10rem;
+    width: 7rem;
+    border-top: 2px solid indigo;
 }
 
 /* Projects */
 
+
 /* Contact me form */
+
+.contactme {
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.8)), url('../images/image05.jpg') center no-repeat;
+    background-size: cover;
+}
 
 form {
     margin-top: 50px;
@@ -112,7 +127,7 @@ form {
 
 .form-control {
     width: 600px;
-    background: transparent;
+    background: transparent !important;
     border: none;
     outline: none;
     border-bottom: 1px solid gray;

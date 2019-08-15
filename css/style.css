@@ -7,9 +7,22 @@ body {
     color: #505962;
 }
 
-section {
-    height: 100vh
+h1 {
+    padding-top: 3rem;
+    padding-bottom: .7rem;
 }
+
+
+/* .offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+} */
+
+/* section {
+    height: 100vh;
+} */
 
 /* Navigation */
 
@@ -50,6 +63,7 @@ section {
 }
 
 /* Home section social media link */
+
 .social_media_btn {
     display: inline-block;
     width: 60px;
@@ -58,7 +72,8 @@ section {
     margin: 10px;
     border-radius: 30%;
     box-shadow: 0 5px 15px -5px #00000070;
-    color: #3498db;
+    /* color: #3498db; */
+    color: rgba(85,69,98,0.9);
     overflow: hidden;
     position: relative;
 }
@@ -79,7 +94,8 @@ section {
     position: absolute;
     width: 120%;
     height: 120%;
-    background: #3498db;
+    /* background: #3498db; */
+    background: rgba(85,69,98,0.9);
     transform: rotate(45deg);
     left: -110%;
     top: 90%;
@@ -111,7 +127,15 @@ hr {
 }
 
 /* Projects */
+.btn-outline-info {
+    color: rgba(85,69,98,0.9);
+    border: rgba(85,69,98,0.9) solid 0.5px;
+}
 
+.btn-outline-info:hover {
+    background-color: rgba(85,69,98,0.9);
+    border: rgba(85,69,98,0.9) solid 0.5px;
+}
 
 /* Contact me form */
 
@@ -126,7 +150,6 @@ form {
 }
 
 .form-control {
-    width: 600px;
     background: transparent !important;
     border: none;
     outline: none;
@@ -146,8 +169,8 @@ input .active {
 }
 
 form .submit {
-    background-color: #554562;
-    color: #FFEFFA;
+    background-color: #554562!important;
+    color: #FFEFFA!important;
     border-color: transparent;
     font-size: 20px;
     font-weight: bold;
@@ -157,7 +180,7 @@ form .submit {
 }
 
 form .submit:hover {
-    background-color: #645E9D;
+    background-color: #645E9D!important;
 }
 
 /* footer */
@@ -171,3 +194,11 @@ footer a {
 footer a:hover {
     color: #2D4FEE;
 }
+
+/* media queries */
+
+/* @media screen and (max-width: 767px) {
+    h1 {
+        font-size: 1rem;
+    }
+} */

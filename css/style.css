@@ -12,6 +12,41 @@ h1 {
     padding-bottom: .7rem;
 }
 
+section {
+    padding-bottom: 5rem;
+}
+
+.badge {
+    width: 7rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.badge-html {
+    background-color: darkorange;
+    width: 5rem;
+}
+
+.badge-css {
+    background-color: darkblue;
+    width: 5rem;
+}
+
+.badge-javascript {
+    background-color: #D5B85A;
+}
+
+.badge-materialize {
+    background-color: #ef9a9a;
+}
+
+.badge-rubyonrails {
+    background-color: red;
+}
+
+.badge-postgres {
+    background-color: #4D7EA8;
+}
 
 /* .offset:before {
     display: block;

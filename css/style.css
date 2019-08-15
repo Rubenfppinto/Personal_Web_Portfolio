@@ -185,14 +185,19 @@ form .submit:hover {
 
 /* footer */
 
+footer p {
+    font-size: 1.25rem;
+}
+
 footer a {
     color: White;
     padding: 5px;
     margin-top: 15px;
+    font-size: 1.625rem;
 }
 
 footer a:hover {
-    color: #2D4FEE;
+    color: rgba(85,69,98,0.9);
 }
 
 /* media queries */

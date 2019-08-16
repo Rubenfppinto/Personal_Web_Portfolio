@@ -16,36 +16,8 @@ section {
     padding-bottom: 5rem;
 }
 
-.badge {
-    width: 7rem;
-    text-transform: uppercase;
-    color: white;
-}
-
-.badge-html {
-    background-color: darkorange;
-    width: 5rem;
-}
-
-.badge-css {
-    background-color: darkblue;
-    width: 5rem;
-}
-
-.badge-javascript {
-    background-color: #D5B85A;
-}
-
-.badge-materialize {
-    background-color: #ef9a9a;
-}
-
-.badge-rubyonrails {
-    background-color: red;
-}
-
-.badge-postgres {
-    background-color: #4D7EA8;
+.bg-custom {
+    background-color: rgba(222, 205, 245, .2);
 }
 
 /* .offset:before {
@@ -172,12 +144,40 @@ hr {
     border: rgba(85,69,98,0.9) solid 0.5px;
 }
 
-/* Contact me form */
-
-.contactme {
-    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.8)), url('../images/image05.jpg') center no-repeat;
-    background-size: cover;
+/* Projects badges */
+.badge {
+    width: 7rem;
+    text-transform: uppercase;
+    color: white;
 }
+
+.badge-html {
+    background-color: darkorange;
+    width: 5rem;
+}
+
+.badge-css {
+    background-color: darkblue;
+    width: 5rem;
+}
+
+.badge-javascript {
+    background-color: #D5B85A;
+}
+
+.badge-materialize {
+    background-color: #ef9a9a;
+}
+
+.badge-rubyonrails {
+    background-color: red;
+}
+
+.badge-postgres {
+    background-color: #4D7EA8;
+}
+
+/* Contact me form */
 
 form {
     margin-top: 50px;
@@ -205,7 +205,7 @@ input .active {
 
 form .submit {
     background-color: #554562!important;
-    color: #FFEFFA!important;
+    color: white!important;
     border-color: transparent;
     font-size: 20px;
     font-weight: bold;
@@ -233,6 +233,10 @@ footer a {
 
 footer a:hover {
     color: rgba(85,69,98,0.9);
+}
+
+footer span {
+    font-size: .7rem;
 }
 
 /* media queries */

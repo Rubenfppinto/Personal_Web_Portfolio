@@ -146,19 +146,20 @@ hr {
 
 /* Projects badges */
 .badge {
-    width: 7rem;
+    max-width: 7rem;
     text-transform: uppercase;
     color: white;
+    padding: 4px 7px;
+    display: inline-block;
+
 }
 
 .badge-html {
     background-color: darkorange;
-    width: 5rem;
 }
 
 .badge-css {
     background-color: darkblue;
-    width: 5rem;
 }
 
 .badge-javascript {
@@ -175,6 +176,30 @@ hr {
 
 .badge-postgres {
     background-color: #4D7EA8;
+}
+
+.badge-laravel {
+    background-color: #5A5353;
+}
+
+.badge-mysql {
+    background-color: #0EB1D2;
+}
+
+.badge-vue {
+    background-color: #3BB273;
+}
+
+.badge-api {
+    background-color: #E1BC29;
+}
+
+.badge-bootstrap {
+    background-color: #3B3561;
+}
+
+.badge-tailwind {
+    background-color: #7FD1B9;
 }
 
 /* Contact me form */
@@ -246,3 +271,9 @@ footer span {
         font-size: 1rem;
     }
 } */
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+  }

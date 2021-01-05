@@ -20,17 +20,6 @@ section {
     background-color: rgba(222, 205, 245, .2);
 }
 
-/* .offset:before {
-    display: block;
-    content: "";
-    height: 4rem;
-    margin-top: -4rem;
-} */
-
-/* section {
-    height: 100vh;
-} */
-
 /* Navigation */
 
 .navbar {
@@ -264,16 +253,9 @@ footer span {
     font-size: .7rem;
 }
 
-/* media queries */
+/* Cards */
 
-/* @media screen and (max-width: 767px) {
-    h1 {
-        font-size: 1rem;
-    }
-} */
-
-.equal {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-  }
+.card-footer {
+    background-color: white;
+    border-top: none;
+}
